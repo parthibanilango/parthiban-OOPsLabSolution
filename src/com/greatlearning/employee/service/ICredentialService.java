@@ -26,7 +26,7 @@ public interface ICredentialService {
 	
 	/**
 	 * @param employee
-	 * @return show credentials
+	 * @return show credentials string
 	 */
 	public String showCredentials(Employee employee);
 	

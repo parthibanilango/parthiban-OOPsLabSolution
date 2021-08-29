@@ -6,6 +6,11 @@ import com.greatlearning.employee.model.Employee;
 import com.greatlearning.employee.service.CredentialServiceImpl;
 import com.greatlearning.employee.service.ICredentialService;
 
+/**
+ * Driver class for admin
+ * @author Parthiban Ilango
+ *
+ */
 public class AdminService {
 	
 	private final static Scanner sc = new Scanner(System.in);

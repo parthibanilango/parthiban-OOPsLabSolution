@@ -76,6 +76,10 @@ public class CredentialServiceImpl implements ICredentialService {
 		return sb.toString();
 	}
 	
+	/**
+	 * 
+	 * @return department code conversion map
+	 */
 	private Map<String, String> getDepartmentMap() {
 		Map<String,String> map= new HashMap<>();
 		map.put("Technical", "tech");
@@ -85,6 +89,11 @@ public class CredentialServiceImpl implements ICredentialService {
 		return map;
 	}
 	
+	/**
+	 * generates pwd
+	 * with minimum of one uppercase, lowercase, number, one spl char from ("!@#$%^&*_=+-/.?<>)")
+	 * @return password with 8 char length
+	 */
 	public String  generatePassword(){
 		StringBuilder sb = new StringBuilder();
 		
@@ -94,6 +103,10 @@ public class CredentialServiceImpl implements ICredentialService {
 		return(sb.toString());
 	}
 
+	/**
+	 * @param i
+	 * @return generated random char for password
+	 */
 	private char generateRandomChar(int i) {
 		Random r = new Random();
 		String randomchoices = "luns";
